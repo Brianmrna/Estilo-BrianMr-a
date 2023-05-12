@@ -21,16 +21,30 @@
     bottom: 20px;
     right: 20px;
     z-index: 10; } 
-    .color{
-        color: white !important;
+.color{
+    color: white !important;
+}
+.carrito_de_compras{
+    width: 50px;
+    height: auto;
+    @media (min-width: 992px){
+        position: absolute;
+        right: 10px;
+        width: 80px;
     }
-    .carrito_de_compras{
-        width: 50px;
-        height: auto;
-        @media (min-width: 992px){
-            position: absolute;
-            right: 10px;
-            width: 80px;
+}
+.producto{
+    margin: 5px;
+    justify-content:center;
+    border-color: black;
+    border-style:ridge;
+    background-color: aliceblue;
+    .infoProducto{
+        padding: 10px;
+        justify-content: space-between;
+        .agregarCarrito{
+            width: 50%;
         }
     }
+}
     

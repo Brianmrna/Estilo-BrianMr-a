@@ -33,3 +33,15 @@
       position: absolute;
       right: 10px;
       width: 80px; } }
+
+.producto {
+  margin: 5px;
+  justify-content: center;
+  border-color: black;
+  border-style: ridge;
+  background-color: aliceblue; }
+  .producto .infoProducto {
+    padding: 10px;
+    justify-content: space-between; }
+    .producto .infoProducto .agregarCarrito {
+      width: 50%; }
