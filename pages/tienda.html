@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estilo-Tienda de productos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.min.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/animate.css/animate.min.css">
     <link rel="stylesheet" href="../css/estilos.css">
@@ -26,61 +27,23 @@
                             <a class="nav-link color mx-3 active" href="./tienda.html">Tienda</a>
                             <a class="nav-link color mx-3" href="./trabajos.html">Trabajos</a>
                         </div>
-                        <div class="carrito_de_compras navbar-nav">
-                            <a class="nav-link" href="#"><img src="../assest/ico/carrito-de-compras.png" alt="carrito" class="img-fluid"></a>
-                        </div>
+                        
+                        <h2 class="carrito_de_compras" id="verCarrito">🛒</h2>
                     </div>
                 </div>
             </nav>
         </header>
-        <main>
-            <div class="buscador">buscador</div>
+        <main class="d-flex justify-content-center">
+            <!-- <div class="buscador">buscador</div>-->
             <div class="container-fluid justify-content-center">
                 <div class="cont_principal_filtros">filtros</div>
                 <h1 id="indicadorBuscador"> </h1>
                 <div id="catalogo" class=" d-flex flex-wrap col-12 row justify-content-center">
-                    <div class="producto d-flex flex-wrap justify-content-center col-3">
-                        <h2>Nombre</h2>
-                        <img class="img-fluid" src="../assest/ico/Z4jlDtC9.jpg_small" alt="">
-                        <div class="infoProducto d-flex col-12  align-items-center">
-                            <button class="agregarCarrito">Agregar</button>
-                            <p class="precio pt-1">$Precio</p>
-                        </div>
-                    </div>
-                    <div class="producto d-flex flex-wrap justify-content-center col-3">
-                        <h2>Nombre</h2>
-                        <img class="img-fluid" src="../assest/ico/Z4jlDtC9.jpg_small" alt="">
-                        <div class="infoProducto d-flex col-12  align-items-center">
-                            <button class="agregarCarrito">Agregar</button>
-                            <p class="precio pt-1">$Precio</p>
-                        </div>
-                    </div>
-                    <div class="producto d-flex flex-wrap justify-content-center col-3">
-                        <h2>Nombre</h2>
-                        <img class="img-fluid" src="../assest/ico/Z4jlDtC9.jpg_small" alt="">
-                        <div class="infoProducto d-flex col-12  align-items-center">
-                            <button class="agregarCarrito">Agregar</button>
-                            <p class="precio pt-1">$Precio</p>
-                        </div>
-                    </div>
-                    <div class="producto d-flex flex-wrap justify-content-center col-3">
-                        <h2>Nombre</h2>
-                        <img class="img-fluid" src="../assest/ico/Z4jlDtC9.jpg_small" alt="">
-                        <div class="infoProducto d-flex col-12  align-items-center">
-                            <button class="agregarCarrito">Agregar</button>
-                            <p class="precio pt-1">$Precio</p>
-                        </div>
-                    </div>
-                    <div class="producto d-flex flex-wrap justify-content-center col-3">
-                        <h2>Nombre</h2>
-                        <img class="img-fluid" src="../assest/ico/Z4jlDtC9.jpg_small" alt="">
-                        <div class="infoProducto d-flex col-12  align-items-center">
-                            <button class="agregarCarrito">Agregar</button>
-                            <p class="precio pt-1">$Precio</p>
-                        </div>
-                    </div>
-
+                    <!-- Aqui va el contenido generado en js -->
                 </div>
+            </div> 
+            <div id="modalContainer" class="modal_container">
+                <!-- Contenido del carrito -->
             </div>
         </main>
         <footer class="container-fluid">
@@ -95,7 +58,10 @@
           </div> 
         </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.all.min.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
-    <!-- <script src="../js/main.js"></script> -->
+    <script src="../js/productos.js"></script>
+    <script src="../js/carrito.js"></script>
+    <script src="../js/main.js"></script> 
 </body>
 </html>
