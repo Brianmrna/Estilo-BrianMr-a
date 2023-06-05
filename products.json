@@ -1,0 +1,44 @@
+[
+    {
+        "id":1,
+        "nombre":"Acondicionador BARBER x 60ml", 
+        "precio": 1292, 
+        "cantidad": 1,
+        "img":"../assest/img/id_1.jpg"
+    },
+    {
+        "id":2,
+        "nombre":"Separadores de Cabello Hair Grippers x6u Barberology", 
+        "precio": 685, 
+        "cantidad": 1,
+        "img":"../assest/img/id_2.jpg"
+    },
+    {
+        "id":3,
+        "nombre":"Serum Con Aceite De Argán BARBER x 20ml Primont", 
+        "precio": 3250, 
+        "cantidad": 1,
+        "img":"../assest/img/id_3.jpg"
+    },
+    {
+        "id":4,
+        "nombre":"Shampoo BARBER x 250ml", 
+        "precio": 2750, 
+        "cantidad": 1,
+        "img":"../assest/img/id_4.jpg"
+    },
+    {
+        "id":5,
+        "nombre":"Absolut Repair Shampoo | SERIE EXPERT | 300ml", 
+        "precio": 2839, 
+        "cantidad":1,
+        "img":"../assest/img/id_5.jpg"
+    },
+    {
+        "id":6,
+        "nombre":"AC X100 HUILE NUTRITIVE MYTHIC OIL L'Oréal Professionnel", 
+        "precio": 1875, 
+        "cantidad": 1,
+        "img":"../assest/img/id_6.jpg"
+    }
+]

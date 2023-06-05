@@ -28,12 +28,23 @@
 .carrito_de_compras {
   cursor: pointer !important;
   width: 50px;
-  height: auto; }
+  height: auto;
+  background-color: black;
+  border-style: none !important; }
   @media (min-width: 992px) {
     .carrito_de_compras {
       position: absolute;
       right: 10px;
       width: 100px; } }
+  .carrito_de_compras .cantidadCarrito {
+    display: none;
+    position: relative;
+    width: 20px;
+    padding: 4px;
+    font-size: small;
+    color: white;
+    background-color: red;
+    border-radius: 50%; }
 
 .producto {
   display: flex;
@@ -44,8 +55,9 @@
   background-color: aliceblue; }
   .producto .agregarCarrito {
     flex-direction: row;
-    width: 150px;
-    height: 75px; }
+    max-width: 150px;
+    max-height: 75px;
+    margin-bottom: 10px; }
   .producto .producto_nombre {
     flex-direction: row;
     font-size: small;
@@ -61,41 +73,95 @@
 
 .modal_container {
   display: none;
-  flex-direction: column;
-  flex-wrap: wrap;
   position: fixed;
-  z-index: 10;
+  z-index: 1;
+  left: 0;
   top: 0;
-  width: 80%;
-  min-height: 88vh;
+  width: 100%;
+  height: 100%;
   overflow: auto;
-  background-color: #6d5e5e; }
-  .modal_container .modal_header {
-    display: flex;
-    flex-direction: row;
-    border-bottom: solid;
-    border-color: white; }
-    .modal_container .modal_header .modal_header_titulo {
-      align-self: center;
-      flex-direction: column;
-      width: 90%; }
-    .modal_container .modal_header .modal_header_button {
-      cursor: pointer;
-      flex-direction: column;
-      position: absolute;
-      right: 0px;
-      top: 0px; }
-  .modal_container .listado_carrito {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 70%;
-    height: auto;
-    overflow-y: auto;
-    scroll-behavior: smooth; }
-    .modal_container .listado_carrito .carrito_content {
-      border-bottom: 1px;
-      border-color: antiquewhite; }
+  background-color: white;
+  flex-direction: column; }
+
+.modal_header {
+  display: flex;
+  flex-direction: row;
+  max-height: 200px;
+  background-color: black;
+  padding-top: 10px;
+  margin-bottom: 20px; }
+  .modal_header .modal_header_titulo {
+    color: white;
+    align-self: center;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    top: 0px; }
+  .modal_header .modal_header_button {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    font-size: large;
+    font-weight: 700;
+    color: white; }
+
+.listado_carrito {
+  display: flex;
+  width: 90%;
+  height: 50vh; }
+
+.carrito_content {
+  background-color: rgba(0, 0, 0, 0.377);
+  width: 90%;
+  height: 200px;
+  align-items: center;
+  padding: 5px;
+  margin-bottom: 5px;
+  align-self: center; }
+
+.lista_nombre {
+  font-size: medium;
+  color: black;
+  align-self: center; }
+
+.divCantidad {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.restar {
+  cursor: pointer !important;
+  text-align: end;
+  font-weight: 800; }
+
+.sumar {
+  cursor: pointer !important;
+  font-weight: 800;
+  text-align: start; }
+
+.cantidad {
+  text-align: center;
+  padding: 20px;
+  font-weight: 800; }
+
+.lista_precio {
+  font-size: medium;
+  color: black;
+  align-self: center;
+  text-align: center; }
 
 .eliminar_producto {
-  cursor: pointer !important; }
+  cursor: pointer !important;
+  display: flex;
+  justify-content: end; }
+
+.total_carrito {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  justify-content: end;
+  border-style: solid;
+  border-color: black; }
+
+.total {
+  width: fit-content; }

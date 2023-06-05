@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.min.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/animate.css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
@@ -28,7 +29,10 @@
                             <a class="nav-link color mx-3" href="./trabajos.html">Trabajos</a>
                         </div>
                         
-                        <h2 class="carrito_de_compras" id="verCarrito">🛒</h2>
+                        <!-- <h2 class="carrito_de_compras" id="verCarrito">🛒 <span class="cantidadCarrito"></span></h2> -->
+                        <button type="button" class="btn btn-primary carrito_de_compras" id="verCarrito">
+                            🛒 <span class="badge bg-secondary cantidadCarrito"></span>
+                        </button>
                     </div>
                 </div>
             </nav>
@@ -36,8 +40,11 @@
         <main class="d-flex justify-content-center">
             <!-- <div class="buscador">buscador</div>-->
             <div class="container-fluid justify-content-center">
-                <div class="cont_principal_filtros">filtros</div>
-                <h1 id="indicadorBuscador"> </h1>
+                <form class="d-flex mt-3 justify-content-center">
+                    <input class="form-control me-2 w-75"  placeholder="Buscar productos" id="formulario">
+                    <button class="btn btn-outline-success " id="buscar">Buscar</button>
+                  </form>
+                <h1 id="indicadorBuscador"></h1>
                 <div id="catalogo" class=" d-flex flex-wrap col-12 row justify-content-center">
                     <!-- Aqui va el contenido generado en js -->
                 </div>
@@ -58,9 +65,9 @@
           </div> 
         </footer>
     </div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.all.min.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
-    <script src="../js/productos.js"></script>
     <script src="../js/carrito.js"></script>
     <script src="../js/main.js"></script> 
 </body>
