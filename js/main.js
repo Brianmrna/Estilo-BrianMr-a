@@ -64,6 +64,11 @@ const buscarNombre = (productos) =>{
             });
         }
     }
+    if(catalogo.innerHTML === ""){
+        catalogo.innerHTML +=`
+            <h2>Producto no encontrado...</h2>
+        `;
+    }
     
 }
 
